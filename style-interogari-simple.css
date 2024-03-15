@@ -1,0 +1,59 @@
+/* Resetare stil implicit pentru margini și padding */
+body, h2, button, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #dee5ec;
+    color: #0f0303;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 10px;
+}
+
+/* Stiluri specifice pentru container-1 */
+.container-1 .result {
+    background-color: #DFF0D8; /* Culoare verde deschisă pentru rezultatele container-1 */
+}
+
+/* Stiluri specifice pentru container-2 */
+.container-2 .result, .result-2 {
+    background-color: #F8D7DA; /* Culoare roșie deschisă pentru rezultatele container-2 */
+}
+
+.container-3 .result, .result-3 {
+    background-color: #d6e09d; /* Culoare roșie deschisă pentru rezultatele container-3 */
+}
+
+.container-4 .result, .result-4 {
+    background-color: #b0c6f0; /* Culoare roșie deschisă pentru rezultatele container-4 */
+}
+
+.container-5 .result, .result-5 {
+    background-color: #eba7e1; /* Culoare roșie deschisă pentru rezultatele container-5 */
+}
+
+.container-6 .result, .result-6 {
+    background-color: #d8a7eb; /* Culoare roșie deschisă pentru rezultatele container-6 */
+}
