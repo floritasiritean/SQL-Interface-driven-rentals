@@ -1,0 +1,54 @@
+<?php include("connection.php"); ?>
+<?php include("interogari-complexe-1.php"); ?>
+<?php include("interogari-complexe-2.php"); ?>
+<?php include("interogari-complexe-3.php"); ?>
+<?php include("interogari-complexe-4.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-interogari-simple.css">
+    
+    
+    <title>Interogari complexe</title>
+</head>
+<body>
+    
+    <button type="button" onclick="getClientsInCity()">Clienti care au inchiriat masini + accesorii din orasul Radauti si nu anulat niciodata</button>
+    <div id="result"></div>
+
+    <button type="button" onclick="getSharedCars()">Masini inchiriate in acelasi timp de clienti diferiti</button>
+    <div id="result-2"></div>
+
+    <button type="button" onclick="getCarsNotReservedByYoungClients()">Masini care nu sunt inchiriate de clienti sub 35 de ani</button>
+    <div id="result-3"></div>
+
+    <form>
+        <label for="dataInceput">Selectați data de început:</label>
+        <input type="date" id="dataInceput" name="dataInceput">
+
+        <label for="dataSfarsit">Selectați data de sfârșit:</label>
+        <input type="date" id="dataSfarsit" name="dataSfarsit">
+
+        <button type="button" onclick="getClientsInInterval()">Obține Clienții în Interval</button>
+    </form>
+
+    <div id="result-4"></div>
+
+
+
+
+    <a href="home.html"><button type="button">Mergi la pagina principala (home)</button></a>
+
+</body>
+
+<script src="script-interogari-complexe-1.js" defer></script>
+<script src="script-interogari-complexe-2.js" defer></script>
+<script src="script-interogari-complexe-3.js" defer></script>
+<script src="script-interogari-complexe-4.js" defer></script>
+
+
+</html>

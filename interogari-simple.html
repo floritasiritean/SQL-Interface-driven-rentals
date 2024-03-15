@@ -1,0 +1,64 @@
+<?php include("connection.php"); ?>
+<?php include("interogari-simple-1.php"); ?>
+<?php include("interogari-simple-2.php"); ?>
+<?php include("interogari-simple-3.php"); ?>
+<?php include("interogari-simple-4.php"); ?>
+<?php include("interogari-simple-5.php"); ?>
+<?php include("interogari-simple-6.php"); ?>
+<?php include("interogari-simple-7.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-interogari-simple.css">
+    <title>Interfață Grafică</title>
+    
+</head>
+<body>
+    
+    <form id="simpleQueryForm">
+        <label for="AnFabricatie">Selectați anul de fabricație:</label>
+        <select id="AnFabricatie" name="AnFabricatie"></select>
+        <button type="button" onclick="getMostExpensiveCar()">Obține Cea Mai Scumpă Mașină</button>      
+        <button type="button" onclick="getMostCheapCar()">Obține Cea Mai Ieftina Mașină</button>
+    </form>
+
+    <div id="result"></div>
+        
+    <div id="result-2"></div>
+    
+    <button type="button" onclick="getMostExpensiveReservation()">Cea mai scumpa rezervare</button>
+    <div id="result-3"></div>
+
+    <button type="button" onclick="getClientsWithReservations()">Clienti si numarul de Rezervări</button>
+    <div id="result-4"></div>
+   
+    <button type="button" onclick="getReservationDetails()">Detalii Rezervari</button>
+    <div id="result-5"></div>
+ 
+    <button type="button" onclick="getClientsWithSpending()">Clienți și Suma Cheltuită</button>
+    <div id="result-6"></div>
+
+    <button onclick="getCarsForRent()">Masinile disponibile pentru inchiriere</button>
+    <div id="result-7"></div>
+
+
+
+
+    <a href="interogari-complexe.html"><button type="button">Mergi la Interogari complexe</button></a>
+
+</body>
+
+
+<script src="script-interogari-simple-1.js" defer></script>
+<script src="script-interogari-simple-2.js" defer></script>
+<script src="script-interogari-simple-3.js" defer></script>
+<script src="script-interogari-simple-4.js" defer></script>
+<script src="script-interogari-simple-5.js" defer></script>
+<script src="script-interogari-simple-6.js" defer></script>
+<script src="script-interogari-simple-7.js" defer></script>
+
+</html>

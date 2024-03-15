@@ -1,0 +1,45 @@
+<?php include("connection.php"); ?>
+<?php include("delete-accesoriu.php"); ?>
+<?php include("delete-client.php"); ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <script src="script-delete-accesoriu.js" defer></script>
+    <script src="script-delete-client.js" defer></script>
+    <title>Interfață Grafică</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h2>Ștergere Accesoriu</h2>
+        <form id="deleteAccesoryForm" method="post">
+            <label for="deleteAccesoryID">ID Accesoriu:</label>
+            <input type="text" id="deleteAccesoryID" name="deleteAccesoryID" required>
+            
+            <!-- Adaugă un buton pentru a apela funcția de ștergere -->
+            <button type="button" onclick="deleteAccesory()">Șterge Accesoriu</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Ștergere Client</h2>
+        <form id="deleteClientForm" method="post">
+            <label for="deleteClientID">ID Client:</label>
+            <input type="text" id="deleteClientID" name="deleteClientID" required>
+            
+            <!-- Adaugă un buton pentru a apela funcția de ștergere -->
+            <button type="button" onclick="deleteClient()">Șterge Client</button>
+        </form>
+    </div>
+
+    <a href="interogari-simple.html"><button type="button">Mergi la Interogari simple</button></a>
+
+</body>
+</html>

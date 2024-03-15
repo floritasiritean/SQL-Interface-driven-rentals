@@ -1,0 +1,85 @@
+<?php include("connection.php"); ?>
+<?php include("insert-accesoriu.php"); ?>
+<?php include("insert-client.php"); ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script-insert-accesoriu.js" defer></script> <!-- Am adăugat atributul defer pentru a asigura încărcarea script-ului după DOM-ul complet -->
+    <script src="script-insert-client.js" defer></script>
+    <link rel="stylesheet" href="css/style-1.css">
+    
+    <title>Interfață Grafică</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h2>Adăugare Accesoriu</h2>
+        <form id="accesoryForm" method="post">
+            <label for="accesoryName">Nume Accesoriu:</label>
+            <input type="text" id="accesoryName" name="accesoryName" required>
+
+            <label for="accesoryPrice">Preț pe zi:</label>
+            <input type="number" id="accesoryPrice" name="accesoryPrice" required>
+
+            <button type="submit">Adaugă Accesoriu</button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Adăugare Client</h2>
+        <form id="clientForm" method="post">
+            <label for="firstName">Prenume:</label>
+            <input type="text" id="firstName" name="firstName" required>
+    
+            <label for="lastName">Nume:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <label for="cnp">CNP:</label>
+            <input type="text" id="cnp" name="cnp" required>
+    
+            <label for="street">Strada:</label>
+            <input type="text" id="street" name="street">
+    
+            <label for="number">Număr:</label>
+            <input type="text" id="number" name="number">
+    
+            <label for="city">Oraș:</label>
+            <input type="text" id="city" name="city">
+    
+            <label for="county">Județ:</label>
+            <input type="text" id="county" name="county">
+    
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="M">Masculin</option>
+                <option value="F">Feminin</option>
+            </select>
+    
+            <label for="birthdate">Data Nașterii:</label>
+            <input type="date" id="birthdate" name="birthdate">
+    
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" name="password">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <button type="submit">Adaugă Client</button>
+        </form>
+    </div>
+    
+    <a href="update.html"><button type="button">Mergi la Update</button></a>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<?php include("connection.php"); ?>
+<?php include("update-accesoriu.php"); ?>
+<?php include("update-client.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <script src="script.js" defer></script>
+    
+    <title>Interfață Grafică</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <form id="updateAccessoryForm">
+        <label for="idAccessory">ID Accesoriu:</label>
+        <input type="text" id="idAccessory" name="idAccessory" required>
+        
+        <label for="newAccessoryName">Nume Accesoriu Nou:</label>
+        <input type="text" id="newAccessoryName" name="newAccessoryName" required>
+
+        <label for="newAccessoryPrice">Preț Nou:</label>
+        <input type="text" id="newAccessoryPrice" name="newAccessoryPrice" required>
+
+        <button type="submit">Actualizare Accesoriu</button>
+    </form>
+
+    <div class="container">
+        <h2>Actualizare Client</h2>
+        <form id="updateClientForm" method="post">
+            
+            <label for="idClient">ID Client:</label>
+            <input type="text" id="idClient" name="idClient" required>
+
+            <label for="updateLastName">Nume:</label>
+            <input type="text" id="updateLastName" name="updateLastName" required>
+
+            <label for="updateFirstName">Prenume:</label>
+            <input type="text" id="updateFirstName" name="updateFirstName" required>
+
+            
+
+            <label for="updateCNP">CNP:</label>
+            <input type="text" id="updateCNP" name="updateCNP" required>
+
+            <label for="updateStreet">Strada:</label>
+            <input type="text" id="updateStreet" name="updateStreet" required>
+
+            <label for="updateNumber">Număr:</label>
+            <input type="text" id="updateNumber" name="updateNumber" required>
+
+            <label for="updateCity">Oraș:</label>
+            <input type="text" id="updateCity" name="updateCity" required>
+
+            <label for="updateCounty">Județ:</label>
+            <input type="text" id="updateCounty" name="updateCounty" required>
+
+            <label for="updateSex">Sex:</label>
+            <select id="updateSex" name="updateSex" required>
+                <option value="M">Masculin</option>
+                <option value="F">Feminin</option>
+            </select>
+
+            <label for="updateBirthdate">Data Nașterii:</label>
+            <input type="date" id="updateBirthdate" name="updateBirthdate" required>
+
+            <label for="updatePhone">Telefon:</label>
+            <input type="text" id="updatePhone" name="updatePhone" required>
+
+            <label for="updatePassword">Parolă:</label>
+            <input type="password" id="updatePassword" name="updatePassword" required>
+
+            <label for="updateEmail">Email:</label>
+            <input type="email" id="updateEmail" name="updateEmail" required>
+
+            <!-- Schimbarea tipului de buton la "button" -->
+            <button type="button" onclick="updateClient()">Actualizează Client</button>
+        </form>
+    </div>
+
+    <a href="delete.html"><button type="button">Mergi la Delete</button></a>
+
+</body>
+
+<script src="script-update-accesoriu.js" defer></script>
+<script src="script-update-client.js" defer></script>
+
+
+</html>
